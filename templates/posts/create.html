@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+
+{%block title %}Crete{%endblock title %}
+
+{% block content %}
+<h1>Create </h1>
+<ul>
+    {% create posts %}
+    <li>{{ post.title }}</li>
+    {% endfor %}
+</ul>
+{% endblock content %}
